@@ -37,9 +37,10 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public Student[] getStudents() {
+		Student[] z= (Student[])ts.toArray(new Student[0]);
 
 		// Add your implementation here
-		return students;
+		return z;
 	}
 
 	@Override

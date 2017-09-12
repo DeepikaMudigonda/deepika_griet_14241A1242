@@ -47,7 +47,6 @@ public class StudentGroup implements StudentArrayOperation {
 	public void setStudents(Student[] students) {
 		for(int i=0;i<students.length;i++)
 			ts.add(students[i]);
-		// Add your implementation here
 	}
 
 	@Override
@@ -138,7 +137,7 @@ public class StudentGroup implements StudentArrayOperation {
 			ts.remove(s);
 				
 			if(s==student){
-				ts.add(s);
+				ts.add(0,s);
 				break;
 			}
 		}

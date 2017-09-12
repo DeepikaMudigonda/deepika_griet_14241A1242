@@ -232,7 +232,7 @@ public class StudentGroup implements StudentArrayOperation {
 			Student s=(Student)itr.next();
 			//ts.remove(s);
 				
-			if(s==student){
+			if(s.equals(student)){		
 			 return (Student)itr.next();	
 			}
 		}

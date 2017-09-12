@@ -27,6 +27,7 @@ public class StudentGroup implements StudentArrayOperation {
 	ArrayList<Student> ts=new ArrayList<Student>();
 	TreeSet<Student> tree=new TreeSet<Student>(new mycom());
 
+
 	/**
 	 * DO NOT remove or change this constructor, it will be used during task check
 	 * @param length
@@ -216,12 +217,25 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public Student[] getStudentsWithMaxAvgMark() {
+
 		// Add your implementation here
 		return null;
 	}
 
 	@Override
 	public Student getNextStudent(Student student) {
+
+		ListIterator itr=ts.listIterator();
+		
+		while(itr.hasNext()){
+				
+			Student s=(Student)itr.next();
+			//ts.remove(s);
+				
+			if(s==student){
+			 return (Student)itr.next();	
+			}
+		}
 		// Add your implementation here
 		return null;
 	}
